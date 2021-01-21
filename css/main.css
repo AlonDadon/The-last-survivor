@@ -1,20 +1,27 @@
 body  {
-background-color: aqua;
-background-image: url(../img/background.jpg);
-background-attachment: fixed;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.cell {
+    width: 35px;
+    height: 50px;
+}
+
+.cell-shown-boom {
+    background-color: rgb(207, 0, 0);
+    background-image: url(../img/backgroundCellBoom.jpg)
+}
+
+.going {
+    background-color: rgb(188, 255, 125)
+    /* background-image: url(../img/backgroundCellBoom.jpg) */
+}
 
 .flag {
-background-color: black;
+background-color: rgb(255, 255, 255);
 
-}
-.shown-boom {
-    background-color: rgb(207, 0, 0);
-}
-.shown-empty {
-    background-color: rgb(167, 167, 167);
 }
 
 .board {
@@ -26,10 +33,6 @@ background-color: black;
 .board-body {
     background-color: rgb(80, 77, 77);
     cursor: pointer;
-}
-.cell {
-    width: 35px;
-    height: 50px;
 }
 
 .h {
