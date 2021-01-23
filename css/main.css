@@ -1,122 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+.win {
+    display : none
+}
+
+
+
+.h {
+    color: rgb(236, 65, 65);
+    text-align: center;
+    
+}
+.cell {
+    width: 35px;
+    height: 50px;
+    background-color: rgba(85, 85, 85);
+    border: 2px solid rgb(117, 117, 117);
+}
+
+.life {
+    color: rgb(236, 65, 65);
+    color: rgb(236, 65, 65);
+    width: 90px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 30%;
+    background-color: rgba(41, 41, 41, 0.50.5);
+    margin-left: 60%;
+ font-size: 35px;   
+display: flex;
+justify-content: center;
+align-items: center;
+/* right: 400px */
+}
+
+h4 {
+    color:lightsalmon;
+    text-align: center;
+    border: 2px solid rgb(119, 92, 92);
+    font-size:28px;
+    left: 50%;
+}
+
+
+.cell-mark {
+    color: rgb(236, 65, 65);
+    width: 90px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 30%;
+    background-color: rgba(150, 138, 138, 0.5);
+    margin-left: 50%;
+    position: absolute;
+ font-size: 35px;   
+ display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+right: 1000px;
+top: 37%;
+right: 400px;
+}
+          
+
+.timer {
+    color: rgb(236, 65, 65);
+    
+    width: 90px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 30%;
+   background-color: rgb(85, 85, 85);
+    margin-left: 50%;
+    position: absolute;
+ font-size: 35px;   
+ display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+right: 400px;
+}
+
+
 body  {
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.cell {
-    width: 35px;
-    height: 50px;
-}
-
-.cell-shown-boom {
-    background-color: rgb(207, 0, 0);
-    background-image: url(../img/backgroundCellBoom.jpg)
+    font-size: 22px;
+    background-position: center;
+    align-items: center;
 }
 
-.going {
-    background-color: rgb(188, 255, 125)
-    /* background-image: url(../img/backgroundCellBoom.jpg) */
+.button {
+display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(114, 114, 114);
+border: 2px solid rgb(119, 92, 92);
+height: 35px;
+color:lightsalmon;
+font-size: 28px
 }
-
-.flag {
-background-color: rgb(255, 255, 255);
-
-}
-
 .board {
     padding-top: 20px;
-    width: 240px;
-    height: 240px;
+    width: 27%;
+    height: 27%;
     margin: auto;
+    box-sizing: border-box
+    
 }
 .board-body {
     background-color: rgb(80, 77, 77);
     cursor: pointer;
-}
-
-.h {
-    color: rgb(245, 65, 65);
-    text-align: center;
-    background-color:  rgba(128, 128, 128, 0.9);
-    font-size: 40px
-
-}
-.text {
-    color: rgb(248, 85, 85);
-    text-align: center;
-    background-color:  rgba(128, 128, 128, 0.9);
-    font-size: 30px
-}
-
-.button {
-    /* display: inline-block  */
-    cursor: pointer;
-    /* height: 30px; */
-    /* position: relative  */
-    /* background-color:  rgb(248, 85, 85); */
-    /* border: 3px solid green; */
-    left: 613px;
-    height: 40px;
-    margin: 0;
-    position: absolute;
-    /* top: 30%; */
-    /* -ms-transform: translateY(-50%); */
-    transform: translateY(-50%);
-}
-.timer {
-    width: 90px;
-    height: 80px;
-    margin-top: 14px;
-    margin-bottom: 30px;
-    /* border-radius: 50%; */
-    background-color: rgb(109, 109, 109,0.8);
-    margin-left: 20%;
-    transform: translateY(-50%);
-    position: absolute;
-    left: 555px;
-    top: 36.5%
-    
-    
-}  
-.count-cell {
-    width: 90px;
-    height: 80px;
-    margin-top: 14px;
-    margin-bottom: 30px;
-    /* border-radius: 50%; */
-    background-color: rgb(109, 109, 109,0.8);
-    margin-left: 20%;
-    transform: translateY(-50%);
-    position: absolute;
-    left: 195px;
-    top: 36.5%
+    width: 450px;
+    height: 250px;
+    box-sizing: border-box
     
 }
-/* .empty {
-    background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
-    cursor: pointer;
-}
-
-
-.table td{
-    width: 30px;
+.cell {
+    width : 30px;
     height: 30px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: x-large;
+    opacity: .8;
     text-align: center;
-    background-color: chartreuse;
-    font-size: 20px;
-} 
-
-.cell-Inverted {
-    
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background-color: chartreuse;
-    font-size: 20px;
 
 }
 
+.win {
 
+    /* background-color: rgba(141, 148, 140, 0.8);    color:  rgba(78, 54, 88, 0.8); */
+    color:lightsalmon;
+    width: 500px;
+    height: 200px;
+display: block;
+position: absolute;
+left: 3%;
+top: 55%;
+ display: block;
+ position: absolute;
+ font-size: 35px;   
+ display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
+}
+.lose{
+    /* background-color: solid rgba(141, 148, 140, 0.8); */
+    color:lightsalmon;
+    width: 500px;
+    height: 200px;
+display: block;
+position: absolute;
+left: 64%;
+top: 55%;
+ display: block;
+ position: absolute;
+ font-size: 35px;   
+ display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
+}
+
+.main-menu {
+    background-color:  rgba(141, 148, 140, 0.8);
+    width: 300px;
+    height: 100px;
+display: inline-block;
+position: absolute;
+left: 40%;
+top: 50%;
+top: 10;
+ font-size: 35px;   
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+life {
+    right: 68%;
+    color: rgb(236, 65, 65);
+    width: 90px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 30%;
+   background-color: rgba(41, 41, 41, 0.50.5);
+    margin-left: 50%;
+    position: absolute;
+ font-size: 35px;   
+ display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
 
 

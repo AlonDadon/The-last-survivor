@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The last survivor</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body onload="initGame()">
-    
+
     <h1 class="h">The last survivor</h1>
-    <h2 class="h" >Will you be able to anticipate the next move?</h2>
-    
-    <div class="timer">
-        <span>Timer</span>
+    <h2 class="h">Will you be able to anticipate the next move?</h2>
+
+    <div class="the-timer">
+        <span class="timer">Time</span>
     </div>
+    <div><span class="cell-mark">0</span>Is mark</div>
     
-    <div class="count-cell">x more areas left</div>
-
-
-   <h4 class="text" >Choose your challenge</h4>
+    <div class="life">💖Life<span class="life">3</span></div>
+    
+    <h4 class="text"> To start Choose your challenge</h4>
+    
   
-<div class="button">
-<button >novice</button>
-<button>Survivor</button>
-<button>Hero</button>
-</div>
-
-
-<hr>
+    <div id="main-menu" class="main-menu">
+        <button id="main-menu"  class="button"  onclick="novice(this) " onclick="startGame()">novice</button>
+        <button id="main-menu" class="button" onclick="Survivor(this)" onclick="startGame()" >Survivor</button>
+        <button id="main-menu" class="button" onclick="hero(this)"  onclick="startGame()">Hero</button>
+    </div>
+        
+   
+    <hr>
     <table class="board">
         <tbody class="board-body">
-      
-      
-      
         </tbody>
     </table>
+
     
+    
+    <div id="win" class="win"> >
+  
+  win!!!🤴 You are a skilled survivor and have managed to overcome obstacles
+Watch the next step and win though
+Are you ready for the next challenge?
+</div>
+    <div id="lose" class="lose"> >The game is over,👻👻remember that to win you have to
+        Learn from your losses, only then will you be better.
+    </div>
+
+
+
     <script src="js/util.js"></script>
-    <script src="js/main.js"></script>
- 
+    <script src="js/GameBoard.js"></script>
+    <script src="js/GameDifficulty.js"></script>
+    <script src="js/GameOver.js"></script>
+
+    <!-- <script src="js/main3.js"></script> -->
+
 
 </body>
 
 
 
-    </html>
+</html>
